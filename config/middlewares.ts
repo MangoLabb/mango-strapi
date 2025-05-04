@@ -1,4 +1,4 @@
-export default ({ env }) => [
+export default [
   'strapi::logger',
   {
     name: 'strapi::security',
@@ -24,6 +24,7 @@ export default ({ env }) => [
       },
     },
   },
+  'strapi::errors',
   'strapi::security',
   'strapi::cors',
   'strapi::poweredBy',
