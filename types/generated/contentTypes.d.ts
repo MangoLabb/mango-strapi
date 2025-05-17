@@ -400,6 +400,7 @@ export interface ApiGalleryGallery extends Struct.CollectionTypeSchema {
 export interface ApiLocationLocation extends Struct.CollectionTypeSchema {
   collectionName: 'locations';
   info: {
+    description: '';
     displayName: 'Location';
     pluralName: 'locations';
     singularName: 'location';
@@ -428,7 +429,7 @@ export interface ApiLocationLocation extends Struct.CollectionTypeSchema {
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
     type: Schema.Attribute.Enumeration<
-      ['part', 'museum', 'cafe', 'restaurant']
+      ['park', 'museum', 'cafe', 'restaurant']
     > &
       Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;

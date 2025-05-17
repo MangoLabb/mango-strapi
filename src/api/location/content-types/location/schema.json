@@ -4,7 +4,8 @@
   "info": {
     "singularName": "location",
     "pluralName": "locations",
-    "displayName": "Location"
+    "displayName": "Location",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,7 +23,7 @@
     "type": {
       "type": "enumeration",
       "enum": [
-        "part",
+        "park",
         "museum",
         "cafe",
         "restaurant"
@@ -30,14 +31,15 @@
       "required": true
     },
     "photo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "address": {
       "type": "string"
