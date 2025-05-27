@@ -17,7 +17,7 @@
       "unique": true
     },
     "description": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "type": {
@@ -42,6 +42,15 @@
       ]
     },
     "address": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "link": {
       "type": "string"
     }
   }
