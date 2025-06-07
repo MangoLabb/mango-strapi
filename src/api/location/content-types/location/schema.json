@@ -38,10 +38,11 @@
     "type": {
       "type": "enumeration",
       "enum": [
-        "park",
-        "museum",
-        "cafe",
-        "restaurant"
+        "nature",
+        "food",
+        "activity",
+        "landmark",
+        "сulture"
       ],
       "required": true,
       "pluginOptions": {
@@ -97,6 +98,18 @@
           "localized": true
         }
       }
+    },
+    "work_time": {
+      "type": "string",
+      "required": true
+    },
+    "pros": {
+      "type": "json",
+      "required": true
+    },
+    "cons": {
+      "type": "json",
+      "required": true
     }
   }
 }
