@@ -14,21 +14,20 @@
     "username": {
       "type": "string"
     },
-    "first_name": {
+    "firstName": {
       "type": "string",
       "required": true
     },
-    "last_name": {
+    "lastName": {
       "type": "string"
-    },
-    "userId": {
-      "type": "string",
-      "required": true
     },
     "favoriteLocations": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::location.location"
+    },
+    "userId": {
+      "type": "biginteger"
     }
   }
 }

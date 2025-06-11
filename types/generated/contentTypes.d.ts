@@ -509,8 +509,8 @@ export interface ApiTelegramUserTelegramUser
       'oneToMany',
       'api::location.location'
     >;
-    first_name: Schema.Attribute.String & Schema.Attribute.Required;
-    last_name: Schema.Attribute.String;
+    firstName: Schema.Attribute.String & Schema.Attribute.Required;
+    lastName: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -521,7 +521,7 @@ export interface ApiTelegramUserTelegramUser
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    userId: Schema.Attribute.String & Schema.Attribute.Required;
+    userId: Schema.Attribute.BigInteger;
     username: Schema.Attribute.String;
   };
 }
