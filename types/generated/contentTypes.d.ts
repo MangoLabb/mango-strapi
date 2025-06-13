@@ -474,7 +474,7 @@ export interface ApiLocationLocation extends Struct.CollectionTypeSchema {
         };
       }>;
     type: Schema.Attribute.Enumeration<
-      ['nature', 'food', 'activity', 'landmark', '\u0441ulture']
+      ['nature', 'food', 'activity', 'landmark', 'culture']
     > &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
@@ -521,7 +521,9 @@ export interface ApiTelegramUserTelegramUser
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    userId: Schema.Attribute.BigInteger;
+    userId: Schema.Attribute.BigInteger &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
     username: Schema.Attribute.String;
   };
 }

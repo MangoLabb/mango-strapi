@@ -42,7 +42,7 @@
         "food",
         "activity",
         "landmark",
-        "сulture"
+        "culture"
       ],
       "required": true,
       "pluginOptions": {
