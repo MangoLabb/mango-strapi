@@ -88,16 +88,21 @@
       "required": true
     },
     "static_map": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": false
+      ]
     },
     "type": {
       "type": "string"
+    },
+    "coordinates": {
+      "type": "component",
+      "repeatable": false,
+      "component": "location.coordinates"
     }
   }
 }
