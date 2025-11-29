@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_location_coordinates",
+  "info": {
+    "displayName": "coordinates",
+    "icon": "earth"
+  },
+  "options": {},
+  "attributes": {
+    "longitude": {
+      "type": "decimal"
+    },
+    "latitude": {
+      "type": "decimal"
+    }
+  }
+}

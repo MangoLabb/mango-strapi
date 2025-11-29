@@ -35,22 +35,6 @@
         }
       }
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "nature",
-        "food",
-        "activity",
-        "landmark",
-        "culture"
-      ],
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "photo": {
       "type": "media",
       "multiple": true,
@@ -103,13 +87,17 @@
       "type": "string",
       "required": true
     },
-    "pros": {
-      "type": "json",
-      "required": true
+    "static_map": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
     },
-    "cons": {
-      "type": "json",
-      "required": true
+    "type": {
+      "type": "string"
     }
   }
 }
