@@ -2,15 +2,16 @@
   "collectionName": "components_location_coordinates",
   "info": {
     "displayName": "coordinates",
-    "icon": "earth"
+    "icon": "earth",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "longitude": {
-      "type": "decimal"
+      "type": "string"
     },
     "latitude": {
-      "type": "decimal"
+      "type": "string"
     }
   }
 }

@@ -3,12 +3,13 @@ import type { Schema, Struct } from '@strapi/strapi';
 export interface LocationCoordinates extends Struct.ComponentSchema {
   collectionName: 'components_location_coordinates';
   info: {
+    description: '';
     displayName: 'coordinates';
     icon: 'earth';
   };
   attributes: {
-    latitude: Schema.Attribute.Decimal;
-    longitude: Schema.Attribute.Decimal;
+    latitude: Schema.Attribute.String;
+    longitude: Schema.Attribute.String;
   };
 }
 
